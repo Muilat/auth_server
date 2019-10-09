@@ -3,16 +3,7 @@ server:
   port: 9191
 spring:
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
 
-    username: sa
-    password:
-  #    url: jdbc:mysql://localhost:3306/authDB?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
-#    username: root
-#    password:
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-    initialization-mode: always
   jpa:
     hibernate:
       naming:

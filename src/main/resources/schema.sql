@@ -1,4 +1,4 @@
-SET sql_mode = '';
+-- SET sql_mode = '';
 
 create table if not exists  oauth_client_details (
   client_id varchar(255) not null,
