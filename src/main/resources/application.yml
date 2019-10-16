@@ -3,6 +3,12 @@ server:
   port: 9191
 spring:
   datasource:
+    url: jdbc:mysql://localhost:3306/opsan1_auth?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    initialization-mode: always
+
 
   jpa:
     hibernate:
@@ -20,3 +26,4 @@ logging:
     org:
       hibernate:
         type: trace
+

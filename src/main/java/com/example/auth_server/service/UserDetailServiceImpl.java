@@ -32,4 +32,12 @@ public class UserDetailServiceImpl implements UserDetailsService {
 
 
     }
+
+    public Optional<User> getUserByUsername(String username){
+        Optional<User> optionalUser = userDetailRepository.findByUsername(username);
+
+        optionalUser.orElseThrow(() -> new UsernameNotFoundException("Username or password wrong"));
+
+        return  optionalUser;
+    }
 }
